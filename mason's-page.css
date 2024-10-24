@@ -1,0 +1,7 @@
+/* Mason's CSS Page */
+
+/* Adds borders to the table. */
+table, th, td {
+    border: 1px solid;
+    border-collapse: collapse;
+}
