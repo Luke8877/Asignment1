@@ -4,12 +4,15 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Açaí</title>
-  <link rel="stylesheet" href="marlon's-page.css" />
+  <!-- Link to external css  -->
+  <link rel="stylesheet" href="marlon's-page.css">
 </head>
 
 <body>
+  <!-- Main header -->
   <header>
     <h1>Açaí</h1>
+    <!-- Nav bar and navigation links -->
     <nav class="flex-container">
         <a href="index.html">Home</a>
         <a href="#overview">Overview</a>
@@ -18,11 +21,14 @@
         <a href="#facts">Facts about açaí</a>
     </nav>
   </header>
-
+  <!-- Main container -->
   <div class="container">
     <main>
+
+      <!-- Overview article -->
       <article>
       <h2 id="overview">Overview</h2>
+      <!-- Figure element with caption, to look alike a wiki page -->
       <figure class="acai-palms">
         <img src="acai-palms.jpg" alt="Açaí palms.">
         <figcaption>Açaí palms.</figcaption>
@@ -37,40 +43,36 @@
         The fruit is small, round, and black-purple in color.
       </p>
     </article>
+
+    <!-- Cultivation article -->
     <article>
       <h2 id="cultivation">Cultivation</h2>
+      <!-- Figure element with caption, to mantain the design standard -->
       <figure class="acai-fruit">
         <img src="acai-fruit.jpg" alt="Açaí palm with fruits.">
         <figcaption>Açaí palm with fruits.</figcaption>
       </figure>
+      <!-- Decided to put everything in the same paragraph using <br> elements as line breaker and
+       <b> to apply the bold style in some key info -->
       <p>
         The cultivation of açaí, mainly of the species Euterpe oleracea, occurs in floodplain regions and wet areas of the Amazon. 
-        The process includes the following steps:
-      </p>
-      <ul>
-        <li>
-          <b>Planting:</b> Açaí seedlings are usually planted in moist soil, with adequate spacing
-          between them to ensure good air circulation and access to light.
-        </li>
-      <li>
+        The process includes the following steps:<br>
+
+        <b>Planting:</b> Açaí seedlings are usually planted in moist soil, with adequate spacing
+        between them to ensure good air circulation and access to light.<br>
+
         <b>Care:</b> During growth, it’s important to monitor irrigation, pest and disease control,
-        and fertilization, which can be done with organic matter.
-      </li>
-      <li>
+        and fertilization, which can be done with organic matter.<br>
+        
         <b>Deforestation and Management:</b> In some cases, açaí palms are cultivated in already
-        deforested areas, where sustainable management is essential to maintain the local ecosystem. 
-      </li>
-    </ul>
-      <p>
-        There are two harvests: one is normally between January and June, while the other is between 
+        deforested areas, where sustainable management is essential to maintain the local ecosystem.<br>
+
+        <b>There are two harvests:</b> one is normally between January and June, while the other is between 
         August and December, producing larger volumes.
-        In 2022, the state of Pará, which accounts for 90% of Brazil's total açaí economy,
-        produced 8,158 tonnes (17,985,000 lb) of açaí berries, generating US$26 million in revenue.
-        The 2022 production was 209 times greater than the volume produced in 2012.
-        The majority of the production remains in the state of Pará: 60% is consumed in the region,
-        30% is exported to another brazilian states, and 10% is exported abroad.
       </p>
     </article>
+
+    <!-- Nutritional benefits article -->
     <article>
       <h2 id="nutritional-benefits">Nutritional benefits</h2>
       <p>
@@ -78,9 +80,10 @@
         which are beneficial and are also present in avocado and olive oil, helping to reduce 
         bad cholesterol (LDL) and improve HDL, helping to prevent cardiovascular diseases 
         such as heart attacks and even preventing obesity, memory problems and physical weakness.
-        Anthocyanin, the pigment that gives teeth their purplish color, has a great ability to fight
+        Anthocyanin, the pigment that gives their purplish color, has a great ability to fight
         free radicals, molecules that destroy healthy cells in the body.
       </p>
+      <!-- Table with <caption> displaying Açaí nutritional facts -->
       <table>
         <caption>Açaí Nutritional Facts (per 100g)</caption>
         <thead>
@@ -102,6 +105,7 @@
                 <td>Fibers</td>
                 <td>17 g</td>
             </tr>
+            <!-- Extra <tr> <th> to breake between diferent categories of nutrients -->
             <tr>
               <th colspan="2"><b>Micronutrients</b></th>
             </tr>
@@ -117,6 +121,7 @@
               <td>Calcium</td>
               <td>286 mg</td>
           </tr>
+          <!-- Extra <tr> <th> to breake between diferent categories of nutrients -->
           <tr>
             <th colspan="2"><b>Vitamins</b></th>
           </tr>
@@ -135,17 +140,35 @@
         </tbody>
     </table>
     </article>
+
+    <!-- Facts article -->
     <article>
       <h2 id="facts">Facts about açaí</h2>
-    </article>
-    <article>
-      <h2></h2>
+      <p>
+        The state of Pará produces around 820,000 tons of açaí a year, corresponding to 85% of 
+        national production, making it the largest producer in the country. The 2022 production 
+        was 209 times greater than the volume produced in 2012. The majority of the production 
+        remains in the state of Pará: 60% is consumed in the region, 30% is exported to another brazilian states, and 10% is exported abroad
+      </p>
+      <!-- Collapsible section with more info -->
+      <details>
+        <summary>More Facts About Açaí</summary>
+          <p>
+              - The states of Pará, Amazonas and Maranhão in Brazil are responsible for more than 85% of
+              the world's production of the fruit.<br>
+              - In 2017, researchers from the University of Pará (Uepa) discovered that
+              the açaí stone can be turned into charcoal.<br>
+              - In 2012, researchers from the Federal University of Pará (UFPA) and the 
+              University of Campinas (Unicamp) concluded that the fiber from the 
+              açaí stone could be used to make prostheses for the human body.
+          </p>
+        </details>
     </article>
   </main>
 </div>
-
+<!-- Footer with basic info about copyright -->
 <footer class="footer-basic">
-  <p>© 2024 Fruit Encyclopedia</p>
+  <p>Created by Marlon Mavinier | © 2024 Fruit Encyclopedia | All rights reserved.</p>
 </footer>
 </body>
 </html>
