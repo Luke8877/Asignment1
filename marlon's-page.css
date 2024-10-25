@@ -1,0 +1,136 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+article h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+article p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  color: #333;
+  background-image: url('acai-background.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-blend-mode: overlay;
+  background-color: #00000066; /* Adds a dark overlay */
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+h2 {
+  border-bottom: 1px solid #a2a9b1;
+}
+
+li {
+  list-style-type: none;
+  font-size: 1.1rem;
+  line-height: 1.2;
+}
+
+main {
+  width: 100%;
+  max-width: 800px;
+  background: #ffffff;
+  border-radius: 8px;
+  padding: 30px;
+  box-shadow: 0 4px 8px #0000001a;
+  display: flex;
+  flex-direction: column;
+  gap: 40px; /* Space between articles */
+}
+
+/* Header styles */
+header {
+  background-color: #60465496;
+  color: #ffffff;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Navigation bar styles */
+nav {
+  display: flex;
+  justify-content: center; /* Centers the nav items */
+  gap: 20px; /* Adds space between nav items */
+  margin-top: 15px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 10px 20px;
+  border-radius: 5px;
+  background-color: #604654cb;
+  transition: background-color .3s;
+}
+
+nav a:hover {
+  background-color: #604654;
+  /* transition: background-color red ease; */
+}
+
+table {
+  width: 100%;
+  border: 1px solid #000000;
+  border-collapse: collapse;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  padding: 8px;
+}
+
+th {
+  color: #ffffff;
+  background-color: #604654;
+}
+
+footer {
+  background-color: #60465496;
+  color: #ffffff;
+  text-align: center;
+  padding: 10px;
+  font-size: 0.9rem;
+}
+
+.acai-fruit {
+  margin: .5em 1.4em 1.3em 0;
+  clear: left;
+  float: left;
+}
+
+.acai-fruit img {
+  width: 180px;
+  height: 285px;
+}
+
+.acai-palms {
+  margin: 0 0 .5em 1em;
+  clear: right;
+  float: right;
+}
+
+.acai-palms img {
+  width: 280px;
+  height: 192px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}

@@ -3,41 +3,149 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Marlon's Page</title>
-  <link rel="stylesheet" href="index.css" />
+  <title>Açaí</title>
+  <link rel="stylesheet" href="marlon's-page.css" />
 </head>
 
 <body>
   <header>
-    <h1>MARLON'S PAGE</h1>
+    <h1>Açaí</h1>
     <nav class="flex-container">
-      <div class="nav-item" onclick="location.href='index.html';">
         <a href="index.html">Home</a>
-      </div>
-      <div class="nav-item" onclick="location.href='index.html';">
-        <a href="index.html">Overview</a>
-      </div>
-      <div class="nav-item" onclick="location.href='index.html';">
-        <a href="index.html">Cultivation</a>
-      </div>
-      <div class="nav-item" onclick="location.href='index.html';">
-        <a href="index.html">Nutritional benefits</a>
-      </div>
-      <div class="nav-item" onclick="location.href='index.html';">
-      </div>
-      <div class="nav-item" onclick="location.href='index.html';">
-        <a href="index.html">Fun facts</a>
-      </div>
+        <a href="#overview">Overview</a>
+        <a href="#cultivation">Cultivation</a>
+        <a href="#nutritional-benefits">Nutritional benefits</a>
+        <a href="#facts">Facts about açaí</a>
     </nav>
   </header>
 
-  <footer class="footer-basic"> 
-    <h5>Developed by</h5>
-    <ul>
-      <li>Marlon</li>
-      <li>Mason</li>
+  <div class="container">
+    <main>
+      <article>
+      <h2 id="overview">Overview</h2>
+      <figure class="acai-palms">
+        <img src="acai-palms.jpg" alt="Açaí palms.">
+        <figcaption>Açaí palms.</figcaption>
+      </figure>
+      <p>
+        Açaí (or Açaí berries) is a fruit that comes from the Açaí palm.
+        Global demand for the fruit has expanded rapidly in the 21st century,
+        and the tree (Açaí palm), is cultivated for that purpose primarily.
+        
+        The species is native to eastern Amazonia, especially in Brazil, mainly in swamps and floodplains. 
+        Açaí palms are tall, slender trees growing to more than 25 m (82 ft) tall, with pinnate leaves up to 3 m (9.8 ft) long. 
+        The fruit is small, round, and black-purple in color.
+      </p>
+    </article>
+    <article>
+      <h2 id="cultivation">Cultivation</h2>
+      <figure class="acai-fruit">
+        <img src="acai-fruit.jpg" alt="Açaí palm with fruits.">
+        <figcaption>Açaí palm with fruits.</figcaption>
+      </figure>
+      <p>
+        The cultivation of açaí, mainly of the species Euterpe oleracea, occurs in floodplain regions and wet areas of the Amazon. 
+        The process includes the following steps:
+      </p>
+      <ul>
+        <li>
+          <b>Planting:</b> Açaí seedlings are usually planted in moist soil, with adequate spacing
+          between them to ensure good air circulation and access to light.
+        </li>
+      <li>
+        <b>Care:</b> During growth, it’s important to monitor irrigation, pest and disease control,
+        and fertilization, which can be done with organic matter.
+      </li>
+      <li>
+        <b>Deforestation and Management:</b> In some cases, açaí palms are cultivated in already
+        deforested areas, where sustainable management is essential to maintain the local ecosystem. 
+      </li>
     </ul>
-    <p>© 2024 GIVE ME A NAME</p>
-  </footer>
+      <p>
+        There are two harvests: one is normally between January and June, while the other is between 
+        August and December, producing larger volumes.
+        In 2022, the state of Pará, which accounts for 90% of Brazil's total açaí economy,
+        produced 8,158 tonnes (17,985,000 lb) of açaí berries, generating US$26 million in revenue.
+        The 2022 production was 209 times greater than the volume produced in 2012.
+        The majority of the production remains in the state of Pará: 60% is consumed in the region,
+        30% is exported to another brazilian states, and 10% is exported abroad.
+      </p>
+    </article>
+    <article>
+      <h2 id="nutritional-benefits">Nutritional benefits</h2>
+      <p>
+        Açaí is rich in fats, most of which are monounsaturated (60%) and polyunsaturated (13%),
+        which are beneficial and are also present in avocado and olive oil, helping to reduce 
+        bad cholesterol (LDL) and improve HDL, helping to prevent cardiovascular diseases 
+        such as heart attacks and even preventing obesity, memory problems and physical weakness.
+        Anthocyanin, the pigment that gives teeth their purplish color, has a great ability to fight
+        free radicals, molecules that destroy healthy cells in the body.
+      </p>
+      <table>
+        <caption>Açaí Nutritional Facts (per 100g)</caption>
+        <thead>
+            <tr>
+                <th>Nutrient</th>
+                <th>Amount</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Calories</td>
+                <td>247 kcal</td>
+            </tr>
+            <tr>
+                <td>Proteins</td>
+                <td>13 g</td>
+            </tr>
+            <tr>
+                <td>Fibers</td>
+                <td>17 g</td>
+            </tr>
+            <tr>
+              <th colspan="2"><b>Micronutrients</b></th>
+            </tr>
+            <tr>
+                <td>Potassium</td>
+                <td>932 mg</td>
+            </tr>
+            <tr>
+                <td>Magnesium</td>
+                <td>174 mg</td>
+            </tr>
+            <tr>
+              <td>Calcium</td>
+              <td>286 mg</td>
+          </tr>
+          <tr>
+            <th colspan="2"><b>Vitamins</b></th>
+          </tr>
+          <tr>
+            <td>Vitamin A</td>
+            <td>146 UI</td>
+        </tr>
+        <tr>
+            <td>Vitamin B3</td>
+            <td>1738 µg</td>
+        </tr>
+        <tr>
+          <td>Vitamin B5</td>
+          <td>1389 µg</td>
+      </tr>
+        </tbody>
+    </table>
+    </article>
+    <article>
+      <h2 id="facts">Facts about açaí</h2>
+    </article>
+    <article>
+      <h2></h2>
+    </article>
+  </main>
+</div>
+
+<footer class="footer-basic">
+  <p>© 2024 Fruit Encyclopedia</p>
+</footer>
 </body>
 </html>
