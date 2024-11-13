@@ -30,12 +30,14 @@ h2 {
     border-bottom: 1px solid #a2a9b1;
 }
   
-header {
+.header {
     background-color: #464096;
     color: #ffffff;
     padding: 20px;
     text-align: center;
     box-shadow: 0 2px 4px #0000001a;
+    position: sticky;
+    top: 0px;
 }
   
 main {
@@ -44,7 +46,6 @@ main {
     background: #ffffff;
     border-radius: 8px;
     padding: 30px;
-    box-shadow: 0 4px 8px #0000001a;
     display: flex;
     flex-direction: column;
     gap: 40px;
@@ -97,13 +98,12 @@ footer {
     font-size: 0.9rem;
 }
 
-  .blueberry {
+.blueberry {
     margin: 0 0 .5em 1em;
-    clear: right;
     float: right;
   }
   
-  .blueberry img {
+.blueberry img {
     width: 280px;
     height: 192px;
   }
