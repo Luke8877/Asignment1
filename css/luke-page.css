@@ -1,56 +1,83 @@
-/* Reset some basic styles */
+/* basic styles */
 * {
     margin: 0;
-    padding: 0;
+    padding: 0; 
     box-sizing: border-box;
 }
 
-/* Set up the body with a background image */
+/* Body styling */
 body {
     font-family: 'Arial', sans-serif;
     color: #333;
-    background-image: url('kiwi-background.jpg');
+    background-image: url('images/kiwi-background.jpg');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
     background-blend-mode: overlay;
-    background-color: rgba(0, 0, 0, 0.4); /* Adds a dark overlay */
+    background-color: rgba(0, 0, 0, 0.4);
     display: flex;
     flex-direction: column;
     min-height: 100vh;
 }
 
-
-/* Header styles */
+/* General header styling */
 header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
     background-color: rgba(76, 175, 80, 0.9);
     color: white;
     padding: 20px;
     text-align: center;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column; /* Allows vertical layout */
+    align-items: center;
 }
 
-/* Navigation bar styles */
+/* Center the h1 and add spacing */
+header h1 {
+    margin: 0;
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+/* Navbar styles */
 nav {
     display: flex;
-    justify-content: center; /* Centers the nav items */
-    gap: 20px; /* Adds space between nav items */
+    gap: 20px;
+    justify-content: center;
     margin-top: 15px;
 }
 
+/* Navbar links styling */
 nav a {
     text-decoration: none;
     color: white;
     font-size: 1rem;
     font-weight: bold;
-    padding: 10px 20px;
+    padding: 12px 25px;
     border-radius: 5px;
     background-color: #388E3C;
+    border: 2px solid #388E3C;
     transition: background-color 0.3s ease;
 }
 
 nav a:hover {
     background-color: #2E7D32;
+}
+
+/* Menu toggle button (hidden by default on larger screens) */
+.menu-toggle {
+    display: none;
+    font-size: 1.5rem;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    margin-top: 10px;
 }
 
 /* Main container styles */
@@ -69,7 +96,7 @@ main {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     display: flex;
     flex-direction: column;
-    gap: 40px; /* Space between articles */
+    gap: 40px;
 }
 
 /* Article section styles */
@@ -106,6 +133,188 @@ footer {
     background-color: rgba(76, 175, 80, 0.9);
     color: white;
     text-align: center;
-    padding: 10px;
-    font-size: 0.9rem;
+    padding: 15px;
+    font-size: 1rem;
 }
+
+/* Container for Recipe Section */
+.kiwi-recipes {
+    padding: 20px;
+    background-color: rgba(76, 175, 80, 0.1);
+    border-radius: 10px;
+    margin: 30px auto;
+    max-width: 1000px;
+    text-align: center;
+}
+
+/* Recipe Card Styling */
+.recipe-card {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+/* Multi-Column Layout for Recipe Details */
+.recipe-details {
+    column-count: 2;
+    column-gap: 15px;
+    line-height: 1.6;
+    font-size: 1rem;
+}
+
+.recipe-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Container for the entire Health Benefits section */
+.health-benefits {
+    padding: 145px;
+    background-color: rgba(76, 175, 80, 0.1);
+    border-radius: 10px;
+    margin: 30px auto;
+    max-width: 800px;
+    text-align: center;
+}
+
+/* Centered Header */
+.health-benefits h2 {
+    font-size: 1.8rem;
+    color: #388E3C;
+    margin-bottom: 50px;
+}
+
+/* Grid Layout for Benefits Cards */
+.benefits-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    width: 100%;
+}
+
+/* Individual Benefit Card Styling */
+.benefit-card {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.benefit-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Icon Styling */
+.benefit-card .icon {
+    font-size: 2rem;
+    color: #4CAF50;
+    margin-bottom: 10px;
+}
+
+/* Benefit Card Text Styling */
+.benefit-card h3 {
+    margin: 0;
+    font-size: 1.2rem;
+    color: #333;
+    font-weight: bold;
+}
+
+.benefit-card p {
+    font-size: 1rem;
+    color: #666;
+    margin-top: 5px;
+    line-height: 1.5;
+}
+
+/* Float Image Styling */
+.float-image {
+    margin-top: 20px;
+    width: 150px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Scroll padding for anchor links */
+html {
+    scroll-padding-top: 145px;
+}
+
+/* Tablet and small screen adjustments (up to 768px wide) */
+@media (max-width: 768px) {
+    /* Hide nav by default on tablet and smaller screens */
+    nav {
+        display: none;
+        flex-direction: column;
+        gap: 10px;
+        padding-top: 10px;
+        background-color: rgba(76, 175, 80, 0.9);
+        width: 100%;
+        text-align: center;
+    }
+
+    /* Show nav when the menu is active */
+    nav.active {
+        display: flex;
+    }
+
+    /* Show the menu toggle button on tablet and smaller screens */
+    .menu-toggle {
+        display: block;
+    }
+
+    /* Header adjustments */
+    header {
+        padding: 10px;
+    }
+
+    header h1 {
+        font-size: 1.8rem;
+    }
+
+    /* Navbar link adjustments for smaller screens */
+    nav a {
+        padding: 8px 16px;
+        font-size: 0.9rem;
+    }
+
+    /* Benefits grid becomes single column */
+    .benefits-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+/* Further adjustments for mobile screens (up to 480px wide) */
+@media (max-width: 480px) {
+    body {
+        font-size: 0.9rem;
+    }
+
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    .main-container, .health-benefits {
+        padding: 20px;
+    }
+
+    .float-image {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .benefits-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .recipe-details {
+        column-count: 1;
+    }
+}
+
