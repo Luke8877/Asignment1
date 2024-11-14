@@ -1,35 +1,11 @@
 /* Mason's CSS Page */
 
-/* Adds borders to the table. */
-table, th, td {
-    border: 1px solid;
-    border-collapse: collapse;
-}
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
- 
-article h2 {
-    font-size: 2rem;
-    margin-bottom: 20px;
-}
 
-article p {
-    font-size: 1.1rem;
-    line-height: 1.6;
-}
-  
-details {
-    margin-top: 15px;
-}
-  
-h2 {
-    border-bottom: 1px solid #a2a9b1;
-}
-  
 .header {
     background-color: #464096;
     color: #ffffff;
@@ -39,18 +15,7 @@ h2 {
     position: sticky;
     top: 0px;
 }
-  
-main {
-    width: 100%;
-    max-width: 800px;
-    background: #ffffff;
-    border-radius: 8px;
-    padding: 30px;
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
-}
-  
+
 nav {
     display: flex;
     justify-content: center;
@@ -72,6 +37,60 @@ nav a {
 nav a:hover {
     background-color: #464096;
 }
+   
+main {
+    width: 100%;
+    max-width: 800px;
+    background: #ffffff;
+    border-radius: 8px;
+    padding: 30px;
+    gap: 40px;
+	margin: 1.6em auto;
+
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    padding: 20px; 
+}
+
+
+.multicol {
+	column-count: ;
+}
+
+.grid{
+	display: grid;
+}
+
+article h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+article p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+  
+details {
+    margin-top: 15px;
+}
+  
+h2 {
+    border-bottom: 1px solid #a2a9b1;
+}
+
+.blueberry {
+    margin: 0 0 .5em 1em;
+    float: right;
+}
+  
+.blueberry img {
+    width: 280px;
+    height: 192px;
+}
   
 table {
     margin-top: 15px;
@@ -81,7 +100,7 @@ table {
 }
   
 td, th {
-    border: 1px solid #dddddd;
+    border: 1px solid #000000;
     padding: 8px;
 }
   
@@ -96,20 +115,4 @@ footer {
     text-align: center;
     padding: 10px;
     font-size: 0.9rem;
-}
-
-.blueberry {
-    margin: 0 0 .5em 1em;
-    float: right;
-  }
-  
-.blueberry img {
-    width: 280px;
-    height: 192px;
-  }
-
-.container {
-    display: flex;
-    justify-content: center;
-    padding: 20px; 
 }
