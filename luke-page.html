@@ -5,28 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kiwi Information - Fruit Encyclopedia</title>
     <!-- Linking the external stylesheet for consistent design -->
-    <link rel="stylesheet" href="luke-page.css">
+    <link rel="stylesheet" href="css/luke-page.css">
 </head>
 <body>
     <!-- Header section with the title and navigation menu -->
     <header>
-        <h1>All About Kiwis</h1> <!-- Main page title -->
+        <h1>All About Kiwis</h1>
+        <button class="menu-toggle" aria-label="Toggle Navigation">&#9776;</button>
         <nav>
-            <!-- Navigation links for quick access to sections -->
             <a href="index.html">Home</a>
             <a href="#overview">Overview</a>
             <a href="#nutrition">Nutritional Benefits</a>
             <a href="#cultivation">Cultivation</a>
             <a href="#fun-facts">Fun Facts</a>
+            <a href="#Recipes">Recipes</a>
+            <a href="#Health">Health Benefits</a>
         </nav>
     </header>
+    
 
     <!-- Main content wrapper to contain all articles -->
     <div class="main-container">
         <main>
             <!-- Article for the kiwi overview -->
             <article id="overview">
-                <h2>Overview</h2>
+                <h2 class="section-anchor">Overview</h2>
                 <p>
                     The kiwi, also known as the kiwifruit or Chinese gooseberry, is a small, fuzzy fruit with a bright green or golden flesh and tiny black seeds. 
                     It is known for its tart flavor and high vitamin C content. Originating in China, it is now grown in many parts of the world.
@@ -35,7 +38,7 @@
 
             <!-- Article detailing the nutritional benefits of kiwis -->
             <article id="nutrition">
-                <h2>Nutritional Benefits</h2>
+                <h2 class="section-anchor">Nutritional Benefits</h2>
                 <p>
                     Kiwis are packed with essential nutrients. They are particularly high in vitamin C, vitamin K, and dietary fiber. 
                     Kiwis also contain a variety of antioxidants that support overall health.
@@ -76,7 +79,8 @@
 
             <!-- Article detailing kiwi cultivation information -->
             <article id="cultivation">
-                <h2>Cultivation</h2>
+                <img src="Images/kiwi.jpg" alt="Kiwi fruit tree." class="float-image">
+                <h2 class="section-anchor">Cultivation</h2>
                 <p>
                     Kiwis thrive in warm climates but can also grow in areas with cooler temperatures, provided they are protected from frost. 
                     The kiwi vine is a vigorous grower and requires ample space and support for optimal growth. 
@@ -86,7 +90,7 @@
 
             <!-- Article with fun facts about kiwis -->
             <article id="fun-facts">
-                <h2>Fun Facts</h2>
+                <h2 class="section-anchor">Fun Facts</h2>
                 <p>
                     Did you know that kiwifruit gets its name from the kiwi bird of New Zealand? Although the fruit originated in China, 
                     it was New Zealand growers who popularized the name. Kiwis are also known for their skin, which some people enjoy eating 
@@ -102,12 +106,66 @@
                     </p>
                 </details>
             </article>
-        </main>
+            <section id="Recipes" class="kiwi-recipes">
+                <h2 class="section-anchor">Delicious Kiwi Recipes</h2>
+                <div class="recipe-card">
+                    <h3>Kiwi Smoothie</h3>
+                    <p class="recipe-details">
+                        • 1 ripe kiwi<br>
+                        • 1 banana<br>
+                        • 1 cup spinach<br>
+                        • 1/2 cup almond milk<br>
+                        • Ice cubes
+                    </p>
+                </div>
+                <div class="recipe-card">
+                    <h3>Kiwi Salad</h3>
+                    <p class="recipe-details">
+                        • 2 kiwis, sliced<br>
+                        • 1 cup mixed greens<br>
+                        • 1/4 cup strawberries<br>
+                        • 1 tbsp olive oil<br>
+                        • Salt and pepper
+                    </p>
+                </div>
+            </section>            
+                <section id="Health" class="health-benefits">
+                    <h2 class="section-anchor">Health Benefits of Kiwis</h2>
+                    <div class="benefits-grid">
+                        <div class="benefit-card">
+                            <span class="icon">🍊</span>
+                            <h3>Immunity Boost</h3>
+                            <p>High in vitamin C, kiwis strengthen the immune system and protect against illnesses.</p>
+                        </div>
+                        <div class="benefit-card">
+                            <span class="icon">🌱</span>
+                            <h3>Good for Digestion</h3>
+                            <p>Rich in dietary fiber, kiwis support healthy digestion and relieve constipation.</p>
+                        </div>
+                        <div class="benefit-card">
+                            <span class="icon">❤️</span>
+                            <h3>Heart Health</h3>
+                            <p>Loaded with antioxidants, kiwis promote cardiovascular health and lower blood pressure.</p>
+                        </div>
+                        <div class="benefit-card">
+                            <span class="icon">✨</span>
+                            <h3>Skin Care</h3>
+                            <p>Antioxidants and vitamin E in kiwis help maintain radiant, healthy skin.</p>
+                        </div>
+                    </div>
+                </section>
+                </main>
+                <script>
+                    document.querySelector('.menu-toggle').addEventListener('click', function() {
+                        document.querySelector('nav').classList.toggle('active');
+                    });
+                </script>
     </div>
-
+    
     <!-- Footer for page credits and copyright information -->
     <footer class="footer-basic">
-        <p>© 2024 Fruit Encyclopedia</p>
+        <p>Created by Luke Thompson | © 2024 Fruit Encyclopedia | All rights reserved.</p>
     </footer>
 </body>
 </html>
+

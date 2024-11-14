@@ -9,7 +9,7 @@
 body {
     font-family: 'Arial', sans-serif;
     color: #333;
-    background-image: url('fruit-background.jpg');
+    background-image: url('../Images/fruit-background.jpg');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -103,4 +103,72 @@ footer {
     bottom: 0;
     left: 0;
     z-index: 1000;
+}
+
+/* Media Queries */
+
+/* For tablets and smaller screens */
+@media (max-width: 768px) {
+    header {
+        padding: 15px;
+    }
+
+    nav {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .main-container {
+        margin-top: 140px;
+        padding: 15px;
+    }
+
+    main {
+        max-width: 90%;
+    }
+
+    section {
+        max-width: 100%;
+        padding: 15px;
+    }
+
+    footer {
+        font-size: 0.8rem;
+    }
+}
+
+/* For mobile screens */
+@media (max-width: 480px) {
+    header {
+        padding: 10px;
+    }
+
+    nav {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    button {
+        padding: 8px 15px;
+        font-size: 0.9rem;
+    }
+
+    .main-container {
+        margin-top: 120px;
+        padding: 10px;
+    }
+
+    main {
+        max-width: 100%;
+    }
+
+    section {
+        max-width: 100%;
+        padding: 10px;
+    }
+
+    footer {
+        font-size: 0.7rem;
+        padding: 8px;
+    }
 }
