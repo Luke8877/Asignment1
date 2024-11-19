@@ -66,8 +66,7 @@ nav button:hover {
     align-items: center; /* Center the content vertically */
     width: 100%;
     padding: 20px; /* Adds some padding to the container */
-    margin-top: 160px; /* Space for the fixed header */
-    margin-bottom: 60px; /* Space for the fixed footer */
+    margin: auto;
 }
 
 /* Main content styles */
