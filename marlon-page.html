@@ -5,7 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Açaí</title>
 	<!-- Link to external css  -->
-	<link rel="stylesheet" href="marlon-page.css">
+	<link rel="stylesheet" href="css/marlon-page.css">
 </head>
 
 <body>
@@ -13,7 +13,7 @@
 	<header>
 		<h1>Açaí</h1>
 		<!-- Nav bar and navigation links -->
-		<nav class="flex-container">
+		<nav>
 			<a href="index.html">Home</a>
 			<a href="#overview">Overview</a>
 			<a href="#cultivation">Cultivation</a>
@@ -23,147 +23,144 @@
 	</header>
 
 	<!-- Main container -->
-	<div class="container">
-		<main>
-			<!-- Overview article -->
-			<article>
-				<h2 id="overview">Overview</h2>
-				<!-- Figure element with caption, to look alike a wiki page -->
-				<figure class="acai-palms">
-					<img src="acai-palms.jpg" alt="Açaí palms.">
-					<figcaption>Açaí palms.</figcaption>
-				</figure>
+	<main class="container">
+
+		<!-- Overview section -->
+		<section class="overview-section">
+			<h2 id="overview">Overview</h2>
+			<!-- Figure element with caption, to look alike a wiki page -->
+			<figure id="acai" class="acai-palms">
+				<img src="Images/acai-palms.jpg" alt="Açaí palms.">
+				<figcaption>Açaí palms.</figcaption>
+			</figure>
+			<p id="content">
+				Açaí (or Açaí berries) is a fruit that comes from the Açaí palm.
+				Global demand for the fruit has expanded rapidly in the 21st century,
+				and the tree (Açaí palm), is cultivated for that purpose primarily.
+				The species is native to eastern Amazonia, especially in Brazil, mainly in swamps and floodplains. 
+				Açaí palms are tall, slender trees growing to more than 25 m (82 ft) tall, with pinnate leaves up to 3 m (9.8 ft) long. 
+				The fruit is small, round, and black-purple in color.
+			</p>
+		</section>
+
+		<!-- Cultivation section -->
+		<section class="cultivation-section">
+			<h2 id="cultivation">Cultivation</h2>
+			<!-- Figure element with caption, to mantain the design standard -->
+			<figure class="acai-fruit">
+				<img src="Images/acai-fruit.jpg" alt="Açaí palm with fruits.">
+				<figcaption>Açaí palm with fruits.</figcaption>
+			</figure>
+			<!-- Decided to put everything in the same paragraph using <br> elements as line breaker and
+			<b> to apply the bold style in some key info -->
+			<p class="column">
+				The cultivation of açaí, mainly of the species Euterpe oleracea, occurs in floodplain regions and wet areas of the Amazon. 
+				The process includes the following steps:<br>
+				<b>Planting:</b> Açaí seedlings are usually planted in moist soil, with adequate spacing
+				between them to ensure good air circulation and access to light.<br>
+				<b>Care:</b> During growth, it’s important to monitor irrigation, pest and disease control,
+				and fertilization, which can be done with organic matter.<br>
+						
+				<b>Deforestation and Management:</b> In some cases, açaí palms are cultivated in already
+				deforested areas, where sustainable management is essential to maintain the local ecosystem.<br>
+				<b>There are two harvests:</b> one is normally between January and June, while the other is between 
+				August and December, producing larger volumes.
+			</p>
+		</section>
+
+		<!-- Nutritional benefits section -->
+		<section>
+			<h2 id="nutritional-benefits">Nutritional benefits</h2>
+			<p>
+				Açaí is rich in fats, most of which are monounsaturated (60%) and polyunsaturated (13%),
+				which are beneficial and are also present in avocado and olive oil, helping to reduce 
+				bad cholesterol (LDL) and improve HDL, helping to prevent cardiovascular diseases 
+				such as heart attacks and even preventing obesity, memory problems and physical weakness.
+				Anthocyanin, the pigment that gives their purplish color, has a great ability to fight
+				free radicals, molecules that destroy healthy cells in the body.
+			</p>
+			<!-- Table with <caption> displaying Açaí nutritional facts -->
+			<table>
+				<caption>Açaí Nutritional Facts (per 100g)</caption>
+				<thead>
+					<tr>
+						<th>Nutrient</th>
+						<th>Amount</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Calories</td>
+						<td>247 kcal</td>
+					</tr>
+					<tr>
+						<td>Proteins</td>
+						<td>13 g</td>
+					</tr>
+					<tr>
+						<td>Fibers</td>
+						<td>17 g</td>
+					</tr>
+					<!-- Extra <tr> <th> to breake between diferent categories of nutrients -->
+					<tr>
+						<th colspan="2"><b>Micronutrients</b></th>
+					</tr>
+					<tr>
+						<td>Potassium</td>
+						<td>932 mg</td>
+					</tr>
+					<tr>
+						<td>Magnesium</td>
+						<td>174 mg</td>
+					</tr>
+					<tr>
+						<td>Calcium</td>
+						<td>286 mg</td>
+					</tr>
+					<!-- Extra <tr> <th> to breake between diferent categories of nutrients -->
+					<tr>
+						<th colspan="2"><b>Vitamins</b></th>
+					</tr>
+					<tr>
+						<td>Vitamin A</td>
+						<td>146 UI</td>
+					</tr>
+					<tr>
+						<td>Vitamin B3</td>
+						<td>1738 µg</td>
+					</tr>
+					<tr>
+						<td>Vitamin B5</td>
+						<td>1389 µg</td>
+					</tr>
+				</tbody>
+			</table>
+		</section>
+
+		<!-- Facts section -->
+		<section>
+			<h2 id="facts">Facts about açaí</h2>
+			<p>
+				The state of Pará produces around 820,000 tons of açaí a year, corresponding to 85% of 
+				national production, making it the largest producer in the country. The 2022 production 
+				was 209 times greater than the volume produced in 2012. The majority of the production 
+				remains in the state of Pará: 60% is consumed in the region, 30% is exported to another brazilian states, and 10% is exported abroad
+			</p>
+			<!-- Collapsible section with more info -->
+			<details>
+				<summary>More Facts About Açaí</summary>
 				<p>
-					Açaí (or Açaí berries) is a fruit that comes from the Açaí palm.
-					Global demand for the fruit has expanded rapidly in the 21st century,
-					and the tree (Açaí palm), is cultivated for that purpose primarily.
-
-					The species is native to eastern Amazonia, especially in Brazil, mainly in swamps and floodplains. 
-					Açaí palms are tall, slender trees growing to more than 25 m (82 ft) tall, with pinnate leaves up to 3 m (9.8 ft) long. 
-					The fruit is small, round, and black-purple in color.
+					- The states of Pará, Amazonas and Maranhão in Brazil are responsible for more than 85% of
+					the world's production of the fruit.<br>
+					- In 2017, researchers from the University of Pará (Uepa) discovered that
+					the açaí stone can be turned into charcoal.<br>
+					- In 2012, researchers from the Federal University of Pará (UFPA) and the 
+					University of Campinas (Unicamp) concluded that the fiber from the 
+					açaí stone could be used to make prostheses for the human body.
 				</p>
-			</article>
-			<!-- Cultivation article -->
-			<article>
-				<h2 id="cultivation">Cultivation</h2>
-				<!-- Figure element with caption, to mantain the design standard -->
-				<figure class="acai-fruit">
-					<img src="acai-fruit.jpg" alt="Açaí palm with fruits.">
-					<figcaption>Açaí palm with fruits.</figcaption>
-				</figure>
-				<!-- Decided to put everything in the same paragraph using <br> elements as line breaker and
-				<b> to apply the bold style in some key info -->
-				<p>
-					The cultivation of açaí, mainly of the species Euterpe oleracea, occurs in floodplain regions and wet areas of the Amazon. 
-					The process includes the following steps:<br>
-
-					<b>Planting:</b> Açaí seedlings are usually planted in moist soil, with adequate spacing
-					between them to ensure good air circulation and access to light.<br>
-
-					<b>Care:</b> During growth, it’s important to monitor irrigation, pest and disease control,
-					and fertilization, which can be done with organic matter.<br>
-							
-					<b>Deforestation and Management:</b> In some cases, açaí palms are cultivated in already
-					deforested areas, where sustainable management is essential to maintain the local ecosystem.<br>
-
-					<b>There are two harvests:</b> one is normally between January and June, while the other is between 
-					August and December, producing larger volumes.
-				</p>
-			</article>
-
-			<!-- Nutritional benefits article -->
-			<article>
-				<h2 id="nutritional-benefits">Nutritional benefits</h2>
-				<p>
-					Açaí is rich in fats, most of which are monounsaturated (60%) and polyunsaturated (13%),
-					which are beneficial and are also present in avocado and olive oil, helping to reduce 
-					bad cholesterol (LDL) and improve HDL, helping to prevent cardiovascular diseases 
-					such as heart attacks and even preventing obesity, memory problems and physical weakness.
-					Anthocyanin, the pigment that gives their purplish color, has a great ability to fight
-					free radicals, molecules that destroy healthy cells in the body.
-				</p>
-				<!-- Table with <caption> displaying Açaí nutritional facts -->
-				<table>
-					<caption>Açaí Nutritional Facts (per 100g)</caption>
-					<thead>
-						<tr>
-							<th>Nutrient</th>
-							<th>Amount</th>
-						</tr>
-					</thead>
-					<tbody>
-						<tr>
-							<td>Calories</td>
-							<td>247 kcal</td>
-						</tr>
-						<tr>
-							<td>Proteins</td>
-							<td>13 g</td>
-						</tr>
-						<tr>
-							<td>Fibers</td>
-							<td>17 g</td>
-						</tr>
-						<!-- Extra <tr> <th> to breake between diferent categories of nutrients -->
-						<tr>
-							<th colspan="2"><b>Micronutrients</b></th>
-						</tr>
-						<tr>
-							<td>Potassium</td>
-							<td>932 mg</td>
-						</tr>
-						<tr>
-							<td>Magnesium</td>
-							<td>174 mg</td>
-						</tr>
-						<tr>
-							<td>Calcium</td>
-							<td>286 mg</td>
-						</tr>
-						<!-- Extra <tr> <th> to breake between diferent categories of nutrients -->
-						<tr>
-							<th colspan="2"><b>Vitamins</b></th>
-						</tr>
-						<tr>
-							<td>Vitamin A</td>
-							<td>146 UI</td>
-						</tr>
-						<tr>
-							<td>Vitamin B3</td>
-							<td>1738 µg</td>
-						</tr>
-						<tr>
-							<td>Vitamin B5</td>
-							<td>1389 µg</td>
-						</tr>
-					</tbody>
-				</table>
-			</article>
-			<!-- Facts article -->
-			<article>
-				<h2 id="facts">Facts about açaí</h2>
-				<p>
-					The state of Pará produces around 820,000 tons of açaí a year, corresponding to 85% of 
-					national production, making it the largest producer in the country. The 2022 production 
-					was 209 times greater than the volume produced in 2012. The majority of the production 
-					remains in the state of Pará: 60% is consumed in the region, 30% is exported to another brazilian states, and 10% is exported abroad
-				</p>
-				<!-- Collapsible section with more info -->
-				<details>
-					<summary>More Facts About Açaí</summary>
-					<p>
-						- The states of Pará, Amazonas and Maranhão in Brazil are responsible for more than 85% of
-						the world's production of the fruit.<br>
-						- In 2017, researchers from the University of Pará (Uepa) discovered that
-						the açaí stone can be turned into charcoal.<br>
-						- In 2012, researchers from the Federal University of Pará (UFPA) and the 
-						University of Campinas (Unicamp) concluded that the fiber from the 
-						açaí stone could be used to make prostheses for the human body.
-					</p>
-				</details>
-			</article>
-		</main>
-	</div>
+			</details>
+		</section>
+	</main>
 	<!-- Footer with basic info about copyright -->
 	<footer class="footer-basic">
 		<p>Created by Marlon Mavinier | © 2024 Fruit Encyclopedia | All rights reserved.</p>
